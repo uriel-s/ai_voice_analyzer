@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Report - Sample</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #f0f0f0; padding: 10px; }
+        .pass { color: green; font-weight: bold; }
+        .fail { color: red; font-weight: bold; }
+        .fault { background-color: #ffe6e6; padding: 5px; margin: 2px; }
+        .replace { background-color: #fff2e6; padding: 5px; margin: 2px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Hardware Test Report</h1>
+        <p>Date: 2025-09-07</p>
+        <p>System: RDT Test Board v2.1</p>
+    </div>
+    
+    <h2>Test Results</h2>
+    <p class="fail">Overall Status: Test Failed</p>
+    
+    <h3>Component Tests:</h3>
+    <ul>
+        <li>Power Supply: <span class="pass">PASS</span></li>
+        <li>Memory Module: <span class="fail">FAIL</span></li>
+        <li>CPU Core: <span class="pass">PASS</span></li>
+        <li>Network Interface: <span class="fail">FAIL</span></li>
+        <li>Storage Controller: <span class="pass">PASS</span></li>
+    </ul>
+    
+    <h3>Detected Faults:</h3>
+    <ul>
+        <li class="fault">Memory corruption detected in sector 0x4000</li>
+        <li class="fault">Network packet loss exceeds 5% threshold</li>
+        <li class="fault">Temperature sensor reading inconsistent</li>
+    </ul>
+    
+    <h3>Components Requiring Replacement:</h3>
+    <ul>
+        <li class="replace">DDR4 Memory Module - Slot 2</li>
+        <li class="replace">Ethernet Controller Chip</li>
+        <li class="replace">Temperature Sensor IC</li>
+    </ul>
+    
+    <h3>Summary:</h3>
+    <p>3 critical faults detected. System requires component replacement before next test cycle.</p>
+</body>
+</html>

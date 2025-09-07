@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Report - Complex Failure</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #f0f0f0; padding: 10px; }
+        .pass { color: green; font-weight: bold; }
+        .fail { color: red; font-weight: bold; }
+        .warning { color: orange; font-weight: bold; }
+        .fault { background-color: #ffe6e6; padding: 5px; margin: 2px; }
+        .replace { background-color: #fff2e6; padding: 5px; margin: 2px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Comprehensive Hardware Test Report</h1>
+        <p>Date: 2025-09-07</p>
+        <p>System: RDT Advanced Test Platform v3.0</p>
+        <p>Test Duration: 4 hours 23 minutes</p>
+    </div>
+    
+    <h2>Test Results</h2>
+    <p class="fail">Overall Status: Critical Failure - Multiple Systems Affected</p>
+    
+    <h3>Component Tests:</h3>
+    <ul>
+        <li>Power Supply Unit: <span class="pass">PASS</span></li>
+        <li>Main CPU: <span class="fail">FAIL</span></li>
+        <li>Secondary Processor: <span class="warning">WARNING</span></li>
+        <li>DDR4 Memory Bank A: <span class="fail">FAIL</span></li>
+        <li>DDR4 Memory Bank B: <span class="pass">PASS</span></li>
+        <li>PCIe Graphics Card: <span class="fail">FAIL</span></li>
+        <li>SATA Controller: <span class="pass">PASS</span></li>
+        <li>USB Controller: <span class="warning">WARNING</span></li>
+        <li>Ethernet Port 1: <span class="fail">FAIL</span></li>
+        <li>Ethernet Port 2: <span class="pass">PASS</span></li>
+        <li>Audio Codec: <span class="fail">FAIL</span></li>
+        <li>Cooling System: <span class="warning">WARNING</span></li>
+    </ul>
+    
+    <h3>Critical Faults Detected:</h3>
+    <ul>
+        <li class="fault">CPU thermal throttling at 105°C - exceeds safe operating temperature</li>
+        <li class="fault">Memory Bank A shows 47 bad sectors in self-test</li>
+        <li class="fault">Graphics card VRAM corruption detected during stress test</li>
+        <li class="fault">Ethernet Port 1 physical layer failure - no signal detected</li>
+        <li class="fault">Audio codec initialization failure - driver timeout</li>
+        <li class="fault">Power delivery instability to CPU VRM circuits</li>
+        <li class="fault">Cache coherency errors between CPU cores</li>
+    </ul>
+    
+    <h3>Warning Conditions:</h3>
+    <ul>
+        <li class="fault">Secondary processor running 15% slower than specification</li>
+        <li class="fault">USB 3.0 ports negotiating at USB 2.0 speeds only</li>
+        <li class="fault">Cooling fan RPM varies by ±20% - bearing wear suspected</li>
+    </ul>
+    
+    <h3>Components Requiring Immediate Replacement:</h3>
+    <ul>
+        <li class="replace">Intel Core i7-12700K CPU - thermal damage suspected</li>
+        <li class="replace">Corsair DDR4-3200 32GB Memory Module - Bank A Slot 1</li>
+        <li class="replace">NVIDIA RTX 4060 Graphics Card - VRAM failure</li>
+        <li class="replace">Realtek RTL8125B Ethernet Controller</li>
+        <li class="replace">Realtek ALC4080 Audio Codec</li>
+        <li class="replace">CPU Voltage Regulator Module (VRM)</li>
+    </ul>
+    
+    <h3>Recommended Preventive Replacements:</h3>
+    <ul>
+        <li class="replace">Noctua NF-A12x25 Cooling Fan - bearing replacement</li>
+        <li class="replace">USB 3.0 Hub Controller IC</li>
+    </ul>
+    
+    <h3>Environmental Data:</h3>
+    <ul>
+        <li>Ambient Temperature: 28°C</li>
+        <li>Humidity: 45%</li>
+        <li>System Temperature Peak: 105°C (CPU)</li>
+        <li>Power Consumption: 485W (Peak), 320W (Average)</li>
+    </ul>
+    
+    <h3>Summary:</h3>
+    <p><strong>CRITICAL:</strong> System has suffered multiple component failures likely due to thermal stress and power delivery issues. 
+    Immediate shutdown recommended. 6 components require replacement before system can be restored to operational status. 
+    Additional cooling capacity and power supply review recommended before restart.</p>
+    
+    <h3>Next Steps:</h3>
+    <ul>
+        <li>Replace all components marked for immediate replacement</li>
+        <li>Verify power supply capacity and stability</li>
+        <li>Implement additional cooling measures</li>
+        <li>Perform full system stress test after repairs</li>
+        <li>Schedule follow-up testing in 30 days</li>
+    </ul>
+</body>
+</html>
